@@ -1,0 +1,17 @@
+Root: D:\interviewDev
+
+Checking: D:\interviewDev\java-interview-questions-main
+  ✅ Exists. Content (1):
+    - java-interview-questions-main
+
+Checking: D:\interviewDev\docker-cheat-sheet-master
+  ✅ Exists. Content (1):
+    - docker-cheat-sheet-master
+
+Checking: D:\interviewDev\system-design-concepts-main
+  ✅ Exists. Content (1):
+    - system-design-concepts-main
+
+Checking: D:\interviewDev\javascript-interview-questions-master
+  ✅ Exists. Content (1):
+    - javascript-interview-questions-master
