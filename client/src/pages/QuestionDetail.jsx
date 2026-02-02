@@ -172,7 +172,7 @@ const QuestionDetail = () => {
                         </span>
                     </div>
 
-                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 dark:text-white tracking-tighter leading-[1.1]">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 dark:text-white tracking-tighter leading-[1.1]">
                         {question.title}
                     </h1>
                 </header>
