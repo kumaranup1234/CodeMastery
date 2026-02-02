@@ -35,13 +35,7 @@ const techs = [
         icon: Server,
         color: 'from-red-500 to-orange-500'
     },
-    {
-        id: 'System Design',
-        name: 'System Design',
-        description: 'Scalable architecture concepts.',
-        icon: Layers,
-        color: 'from-purple-500 to-pink-500'
-    },
+
     {
         id: 'Docker',
         name: 'Docker',
