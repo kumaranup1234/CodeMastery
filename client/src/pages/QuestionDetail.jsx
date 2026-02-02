@@ -182,6 +182,23 @@ const QuestionDetail = () => {
                     <ReactMarkdown rehypePlugins={[rehypeRaw]} components={components}>
                         {cleanContent}
                     </ReactMarkdown>
+
+                    {/* Image Section - Moved to Bottom */}
+                    {question.image && (
+                        <div className="mt-12 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-800 shadow-sm bg-gray-50 dark:bg-gray-900/50 p-4">
+                            <p className="text-sm text-gray-400 font-mono mb-2 uppercase tracking-wide">Diagram</p>
+                            <img
+                                src={question.image}
+                                alt={question.title}
+                                className="w-full object-contain max-h-[600px] bg-white dark:bg-black/20 rounded-lg"
+                                onError={(e) => {
+                                    e.target.onerror = null;
+                                    e.target.src = 'https://placehold.co/600x400?text=Image+Not+Found';
+                                    console.error("Failed to load image:", question.image);
+                                }}
+                            />
+                        </div>
+                    )}
                 </article>
 
                 {/* Footer Navigation */}
