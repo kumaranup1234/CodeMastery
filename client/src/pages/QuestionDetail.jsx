@@ -71,7 +71,7 @@ const QuestionDetail = () => {
                 </code>
             );
         },
-        h1: ({ children }) => <h1 className="text-4xl md:text-5xl font-bold mt-16 mb-8 text-gray-900 dark:text-white tracking-tight">{children}</h1>,
+        h1: ({ children }) => <h1 className="text-3xl md:text-5xl font-bold mt-16 mb-8 text-gray-900 dark:text-white tracking-tight">{children}</h1>,
         h2: ({ children }) => <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6 text-gray-900 dark:text-white">{children}</h2>,
         h3: ({ children }) => <h3 className="text-xl md:text-2xl font-semibold mt-10 mb-4 text-gray-900 dark:text-white">{children}</h3>,
         p: ({ children }) => <p className="mb-6 leading-8 text-lg md:text-xl text-gray-600 dark:text-gray-300 font-normal">{children}</p>,
