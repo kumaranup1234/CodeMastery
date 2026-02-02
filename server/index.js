@@ -14,11 +14,6 @@ app.use(cors({
 }));
 app.use(express.json());
 
-// Database Connection
-mongoose.connect(process.env.MONGO_URI)
-    .then(() => console.log('✅ MongoDB Connected'))
-    .catch(err => console.error('❌ MongoDB Connection Error:', err));
-
 // Routes (Placeholder)
 app.get('/', (req, res) => {
     res.send('CodeMastery API is running...');
@@ -31,6 +26,17 @@ const userRoutes = require('./routes/user'); // New
 app.use('/api/auth', authRoutes);
 app.use('/api/user', userRoutes); // New
 
-app.listen(PORT, () => {
-    console.log(`🚀 Server running on port ${PORT}`);
-});
+
+// Database Connection
+mongoose.connect(process.env.MONGO_URI)
+    .then(() => {
+        console.log('MongoDB Connected');
+        
+        app.listen(PORT, () => {
+            console.log(`Server running on port ${PORT}`);
+        });
+    })
+    .catch(err => {
+        console.error('MongoDB Connection Error:', err);
+        process.exit(1); 
+    });
